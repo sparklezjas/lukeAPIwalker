@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/lukeAPIwalker/static/css/main.073c9b0a.css",
-    "main.js": "/lukeAPIwalker/static/js/main.d7713e21.js",
+    "main.css": "/lukeAPIwalker/static/css/main.e6c13ad2.css",
+    "main.js": "/lukeAPIwalker/static/js/main.f495ca51.js",
     "static/js/787.9cf3accb.chunk.js": "/lukeAPIwalker/static/js/787.9cf3accb.chunk.js",
-    "static/media/logo.svg": "/lukeAPIwalker/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/lukeAPIwalker/index.html",
-    "main.073c9b0a.css.map": "/lukeAPIwalker/static/css/main.073c9b0a.css.map",
-    "main.d7713e21.js.map": "/lukeAPIwalker/static/js/main.d7713e21.js.map",
+    "main.e6c13ad2.css.map": "/lukeAPIwalker/static/css/main.e6c13ad2.css.map",
+    "main.f495ca51.js.map": "/lukeAPIwalker/static/js/main.f495ca51.js.map",
     "787.9cf3accb.chunk.js.map": "/lukeAPIwalker/static/js/787.9cf3accb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d7713e21.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.f495ca51.js"
   ]
 }

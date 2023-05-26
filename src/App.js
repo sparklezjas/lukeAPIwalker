@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './Components/Home';
+import People from './Components/People';
+import Planets from './Components/Planets';
 
-function App() {
+const App = () => {
+  const [category, setCategory] = useState('');
+  const [id, setID] = useState('');
+
+  const handleFormSubmit = (selectedCategory, selectedID) => {
+    setCategory(selectedCategory);
+    setID(selectedID);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <h1 style={{ textAlign: 'center' }}>Luke API Walker</h1>
+      <Home
+        category={category}
+        id={id}
+        onFormSubmit={handleFormSubmit}
+      />
+      <Routes>
+        <Route
+          path="/"
+          element={<Home category={category} id={id} />}
+        />
+        <Route path="/people/:id" element={<People />} />
+        <Route path="/planets/:id" element={<Planets />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
